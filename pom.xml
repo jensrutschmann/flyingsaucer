@@ -11,7 +11,7 @@
 
   <groupId>org.xhtmlrenderer</groupId>
   <artifactId>flying-saucer-parent</artifactId>
-  <version>9.0.2-SNAPSHOT</version>
+  <version>9.0.1-k15t3</version>
 
   <packaging>pom</packaging>
 
@@ -41,6 +41,7 @@
     <connection>scm:git:ssh://git@github.com/jensrutschmann/flyingsaucer.git</connection>
     <developerConnection>scm:git:ssh://git@github.com/jensrutschmann/flyingsaucer.git</developerConnection>
     <url>https://github.com/jensrutschmann/flyingsaucer</url>
+    <tag>9.0.1-k15t3</tag>
   </scm>
 
     <distributionManagement>
