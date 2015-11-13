@@ -247,8 +247,6 @@ public class InlineBox implements Styleable {
                         wordWidth += spaceWidth;
                         minWordWidth += spaceWidth;
                     }
-                } else {
-                    maxWidth += spaceWidth;
                 }
                 spaceCount = 0;
             }
@@ -263,6 +261,9 @@ public class InlineBox implements Styleable {
                 _minWidth = minWordWidth;
             }
             maxWidth += wordWidth;
+            if (! includeWS) {
+                maxWidth += spaceWidth;
+            }
 
             last = current;
             for (int i = current; i < text.length(); i++) {
@@ -289,8 +290,6 @@ public class InlineBox implements Styleable {
                     wordWidth += spaceWidth;
                     minWordWidth += spaceWidth;
                 }
-            } else {
-                maxWidth += spaceWidth;
             }
             spaceCount = 0;
         }
